@@ -14,11 +14,12 @@
     "comment": ""
   },
   "attributes": {
-    "Content": {
+    "content": {
       "type": "richtext"
     },
-    "Title": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "unique": true
     },
     "published": {
       "type": "boolean"
@@ -27,7 +28,7 @@
       "collection": "category",
       "via": "posts"
     },
-    "Image": {
+    "image": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
